@@ -12,6 +12,7 @@ RUN openssl req -x509 -nodes -days 1825 \
 
 FROM traefik/whoami
 
+
 COPY --from=0 /certs /certs
 
 EXPOSE 443
